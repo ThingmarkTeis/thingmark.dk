@@ -3,125 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThingMark — Performance Programs</title>
-        <!-- ThingMark.dk -->
+    <title>ThingMark - Digital Marketing Solutions</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #fafafa; }
-
-        .hero {
-            min-height: 50vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 3rem 2rem;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: white;
-        }
-        .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; opacity: 0.8; max-width: 500px; }
-
-        .programs {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.2s;
-        }
-        .card:hover { transform: translateY(-4px); }
-
-        .card-header {
-            padding: 2rem;
-            color: white;
-            text-align: center;
-        }
-        .card-header h2 { font-size: 1.5rem; }
-
-        .card-body {
-            padding: 1.5rem 2rem 2rem;
-            text-align: center;
-        }
-        .card-body p { margin-bottom: 1.5rem; color: #555; line-height: 1.5; }
-        .card-body .price { font-size: 2rem; font-weight: 800; color: #1a1a2e; margin-bottom: 1rem; }
-
-        .card-btn {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            color: white;
-            font-weight: 700;
-            font-size: 1rem;
-        }
-
-        .c1 .card-header { background: linear-gradient(135deg, #0f0c29, #302b63); }
-        .c1 .card-btn { background: #e94560; }
-
-        .c2 .card-header { background: linear-gradient(135deg, #0a2239, #1d8348); }
-        .c2 .card-btn { background: #1d8348; }
-
-        .c3 .card-header { background: linear-gradient(135deg, #1a0000, #8b0000); }
-        .c3 .card-btn { background: #c0392b; }
-
-        .c4 .card-header { background: linear-gradient(135deg, #0a1628, #2471a3); }
-        .c4 .card-btn { background: #2e86c1; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #fff; background: #0a0a1a; overflow-x: hidden; }
+        .page { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; position: relative; }
+        .bg-gradient { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at 20% 50%, rgba(59,38,120,0.4) 0%, transparent 50%), radial-gradient(ellipse at 80% 50%, rgba(29,78,137,0.3) 0%, transparent 50%), radial-gradient(ellipse at 50% 100%, rgba(139,0,0,0.15) 0%, transparent 40%), #0a0a1a; z-index: 0; }
+        .content { position: relative; z-index: 1; max-width: 800px; }
+        .badge { display: inline-block; padding: 0.5rem 1.2rem; border-radius: 50px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); font-size: 0.85rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.7); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .logo { font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; }
+        .logo span { background: linear-gradient(135deg, #fff 0%, #a78bfa 50%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .tagline { font-size: clamp(1.1rem, 2.5vw, 1.4rem); color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 3rem; max-width: 600px; }
+        .divider { width: 60px; height: 2px; background: linear-gradient(90deg, #a78bfa, #60a5fa); margin: 0 auto 2.5rem; border-radius: 2px; }
+        .construction { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.5rem; border-radius: 12px; background: rgba(167,139,250,0.1); border: 1px solid rgba(167,139,250,0.25); font-size: 1rem; color: #a78bfa; margin-bottom: 3rem; }
+        .pulse { width: 8px; height: 8px; border-radius: 50%; background: #a78bfa; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .services { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem; }
+        .service { padding: 1.5rem; border-radius: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); min-width: 200px; max-width: 220px; transition: all 0.3s; }
+        .service:hover { background: rgba(255,255,255,0.06); border-color: rgba(167,139,250,0.3); transform: translateY(-2px); }
+        .service-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+        .service h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; }
+        .service p { font-size: 0.8rem; color: rgba(255,255,255,0.4); line-height: 1.4; }
+        .contact { color: rgba(255,255,255,0.4); font-size: 0.9rem; }
+        .contact a { color: #a78bfa; text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+        .footer { padding: 2rem; text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.2); position: relative; z-index: 1; }
     </style>
 </head>
 <body>
-
-    <section class="hero">
-        <h1>ThingMark</h1>
-        <p>Performance programs built for men who refuse to settle.</p>
-    </section>
-
-    <section class="programs">
-        <div class="card c1">
-            <div class="card-header"><h2>The Executive Edge</h2></div>
-            <div class="card-body">
-                <p>Premium coaching for high-performing professionals optimizing energy, focus, and physical performance.</p>
-                <div class="price">$497</div>
-                <a href="/executive-edge/" class="card-btn">Learn More</a>
+    <div class="bg-gradient"></div>
+    <section class="page">
+        <div class="content">
+            <div class="badge">DIGITAL MARKETING AGENCY</div>
+            <h1 class="logo"><span>ThingMark</span></h1>
+            <p class="tagline">We build high-converting funnels, landing pages, and automated marketing systems that turn traffic into customers.</p>
+            <div class="divider"></div>
+            <div class="construction"><span class="pulse"></span> Website under construction - Launching soon</div>
+            <div class="services">
+                <div class="service"><div class="service-icon">&#9889;</div><h3>Landing Pages</h3><p>High-converting pages built for performance</p></div>
+                <div class="service"><div class="service-icon">&#128200;</div><h3>Paid Ads</h3><p>Google Ads and Meta campaigns that deliver ROI</p></div>
+                <div class="service"><div class="service-icon">&#9881;</div><h3>Automation</h3><p>AI-powered optimization and email funnels</p></div>
             </div>
-        </div>
-
-        <div class="card c2">
-            <div class="card-header"><h2>The 90-Day Recharge</h2></div>
-            <div class="card-body">
-                <p>A complete 90-day health transformation with progressive coaching and structured accountability.</p>
-                <div class="price">$297</div>
-                <a href="/90-day/" class="card-btn">Learn More</a>
-            </div>
-        </div>
-
-        <div class="card c3">
-            <div class="card-header"><h2>Master T</h2></div>
-            <div class="card-body">
-                <p>Evidence-based testosterone optimization through training, nutrition, and lifestyle protocols.</p>
-                <div class="price">$397</div>
-                <a href="/master-t/" class="card-btn">Learn More</a>
-            </div>
-        </div>
-
-        <div class="card c4">
-            <div class="card-header"><h2>The Reboot</h2></div>
-            <div class="card-body">
-                <p>A beginner-friendly health reset. Simple steps, real guidance, lasting results.</p>
-                <div class="price">$197</div>
-                <a href="/reboot/" class="card-btn">Learn More</a>
-            </div>
+            <p class="contact">Get in touch: <a href="mailto:teis@thingmark.dk">teis@thingmark.dk</a></p>
         </div>
     </section>
-
+    <div class="footer">&copy; 2026 ThingMark. All rights reserved.</div>
 </body>
 </html>
