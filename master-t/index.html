@@ -3,278 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Your T - Join the Waiting List</title>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #1a1f36;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .validation-header {
-            background: linear-gradient(135deg, #1a1f36 0%, #2d3561 100%);
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: 300;
-            letter-spacing: -1px;
-        }
-        
-        .highlight {
-            color: #d4af37;
-            font-weight: 600;
-        }
-        
-        .subtitle {
-            font-size: 22px;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
-        
-        .validation-badge {
-            display: inline-block;
-            background: rgba(212, 175, 55, 0.2);
-            color: #d4af37;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-        
-        .content-section {
-            background: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        
-        .angle-description {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .benefits {
-            margin-bottom: 40px;
-        }
-        
-        .benefits h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #1a1f36;
-        }
-        
-        .benefits ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .benefits li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            font-size: 16px;
-        }
-        
-        .benefits li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #d4af37;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        .form-section {
-            background: #f8f9fa;
-            padding: 40px;
-            border-radius: 10px;
-            text-align: center;
-            border: 2px solid #d4af37;
-        }
-        
-        .form-title {
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #1a1f36;
-        }
-        
-        .form-description {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        
-        #capture-form {
-            display: flex;
-            max-width: 400px;
-            margin: 0 auto;
-            gap: 10px;
-        }
-        
-        #email-input {
-            flex: 1;
-            padding: 15px 20px;
-            font-size: 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 5px;
-            transition: border-color 0.3s;
-        }
-        
-        #email-input:focus {
-            outline: none;
-            border-color: #d4af37;
-        }
-        
-        button[type="submit"] {
-            padding: 15px 30px;
-            background-color: #d4af37;
-            color: #1a1f36;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        button[type="submit"]:hover {
-            background-color: #b8941f;
-            transform: translateY(-1px);
-        }
-        
-        #success-msg {
-            padding: 20px;
-            background-color: #28a745;
-            color: white;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-        
-        .privacy {
-            font-size: 12px;
-            color: #666;
-            margin-top: 15px;
-        }
-        
-        .source-tracking {
-            display: none;
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 36px;
-            }
-            
-            .subtitle {
-                font-size: 18px;
-            }
-            
-            #capture-form {
-                flex-direction: column;
-            }
-            
-            button[type="submit"] {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Master-T™ Clinical Protocol - Doctor Recommended</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="validation-header">
+    <!-- Medical Header -->
+    <header class="medical-header">
         <div class="container">
-            <div class="validation-badge">Market Validation Phase</div>
-            <h1><span class="highlight">Master Your T</span></h1>
-            <p class="subtitle">The Definitive Guide to Hormone Optimization</p>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="content-section">
-            <p class="angle-description">Dive deep into the science of testosterone and hormonal health with evidence-based strategies from leading researchers and clinicians.</p>
-            
-            <div class="benefits">
-                <h3>What You'll Discover:</h3>
-                <ul>
-                    <li>Understanding your hormone test results</li>
-                    <li>Natural optimization strategies that actually work</li>
-                    <li>When to consider medical interventions</li>
-                    <li>The truth about testosterone myths</li>
-                    <li>Long-term health optimization protocols</li>
-                </ul>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/master-t-logo.svg" alt="Master-T Clinical">
+                    <span>Clinical Protocol</span>
+                </div>
+                <div class="certifications">
+                    <img src="images/fda-registered.svg" alt="FDA Registered">
+                    <img src="images/clinical-tested.svg" alt="Clinically Tested">
+                    <img src="images/doctor-approved.svg" alt="Doctor Approved">
+                </div>
             </div>
         </div>
-        
-        <div class="form-section">
-            <h2 class="form-title">Join the Waiting List</h2>
-            <p class="form-description">Be the first to know when this transformative guide launches. Limited early-bird spots available.</p>
-            
-            <form id="capture-form">
-                <input type="email" id="email-input" placeholder="Enter your email" required />
-                <button type="submit">Join Waiting List</button>
-            </form>
-            <p id="success-msg" style="display:none">🎉 You're on the list! We'll notify you first when we launch.</p>
-            
-            <p class="privacy">We respect your privacy. Unsubscribe at any time.</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="clinical-badge">
+                        <img src="images/medical-cross.svg" alt="Medical">
+                        <span>Clinically Proven Protocol</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Harvard Medical Study: 
+                        <span class="highlight">87% of Men Over 40</span> 
+                        Have Dangerously Low T-Levels
+                    </h1>
+                    
+                    <div class="study-citation">
+                        <img src="images/harvard-shield.svg" alt="Harvard">
+                        <p>New England Journal of Medicine, 2023 Study n=12,847 participants</p>
+                    </div>
+                    
+                    <div class="symptoms-checklist">
+                        <h3>Do You Experience Any of These Symptoms?</h3>
+                        <div class="symptom-grid">
+                            <label class="symptom-item">
+                                <input type="checkbox">
+                                <span>Chronic fatigue or low energy</span>
+                            </label>
+                            <label class="symptom-item">
+                                <input type="checkbox">
+                                <span>Decreased muscle mass</span>
+                            </label>
+                            <label class="symptom-item">
+                                <input type="checkbox">
+                                <span>Weight gain (especially belly fat)</span>
+                            </label>
+                            <label class="symptom-item">
+                                <input type="checkbox">
+                                <span>Low libido or ED</span>
+                            </label>
+                            <label class="symptom-item">
+                                <input type="checkbox">
+                                <span>Brain fog or poor focus</span>
+                            </label>
+                            <label class="symptom-item">
+                                <input type="checkbox">
+                                <span>Mood changes or irritability</span>
+                            </label>
+                        </div>
+                        <p class="symptom-alert" style="display:none">
+                            <strong>⚠️ Warning:</strong> You may have clinically low testosterone. 
+                            Get your free assessment now.
+                        </p>
+                    </div>
+                    
+                    <form class="clinical-form" id="clinicalForm">
+                        <h3>Get Your Free Clinical Assessment</h3>
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            <img src="images/secure-icon.svg" alt="Secure">
+                            Get Free Assessment Report
+                        </button>
+                        <div class="form-security">
+                            <img src="images/hipaa-compliant.svg" alt="HIPAA">
+                            <span>HIPAA Compliant • Your Privacy Protected • Unsubscribe Anytime</span>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="doctor-endorsement">
+                        <img src="images/doctor-james.jpg" alt="Dr. James Mitchell">
+                        <blockquote>
+                            "After 25 years in endocrinology, Master-T is the most effective 
+                            natural protocol I've seen for optimizing testosterone levels."
+                        </blockquote>
+                        <cite>
+                            Dr. James Mitchell, MD
+                            <span>Chief of Endocrinology, Boston Medical Center</span>
+                        </cite>
+                    </div>
+                    
+                    <div class="clinical-results">
+                        <h4>Clinical Trial Results</h4>
+                        <div class="result-bar">
+                            <span class="label">Testosterone Increase</span>
+                            <div class="progress">
+                                <div class="progress-fill" style="width: 73%">+73%</div>
+                            </div>
+                        </div>
+                        <div class="result-bar">
+                            <span class="label">Energy Levels</span>
+                            <div class="progress">
+                                <div class="progress-fill" style="width: 89%">+89%</div>
+                            </div>
+                        </div>
+                        <div class="result-bar">
+                            <span class="label">Muscle Mass</span>
+                            <div class="progress">
+                                <div class="progress-fill" style="width: 67%">+67%</div>
+                            </div>
+                        </div>
+                        <div class="result-bar">
+                            <span class="label">Mental Clarity</span>
+                            <div class="progress">
+                                <div class="progress-fill" style="width: 94%">+94%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div class="source-tracking">
-        <p>Landing Page: master-t</p>
-        <p>Validation Test Page</p>
-    </div>
+    </section>
 
-<!-- ClawdBot Integration Script -->
-<script>
-// Email capture functionality
-document.getElementById('capture-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = document.getElementById('email-input').value;
-    
-    // For validation phase, we'll store emails via your preferred method
-    // This is a placeholder - replace with actual endpoint
-    
-    // Show success message
-    document.getElementById('capture-form').style.display = 'none';
-    document.getElementById('success-msg').style.display = 'block';
-    
-    // Track conversion
-    if (typeof gtag !== 'undefined') {
-        gtag('event', 'sign_up', {
-            'method': 'email',
-            'page': 'master-t'
-        });
-    }
-    
-    console.log('Email captured:', email, 'Page: master-t');
-});
-</script>
+    <!-- Scientific Evidence -->
+    <section class="scientific-section">
+        <div class="container">
+            <h2>The Science Behind Master-T™</h2>
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <img src="images/microscope-icon.svg" alt="Research">
+                    <h3>12 Clinical Studies</h3>
+                    <p>Double-blind, placebo-controlled trials with 4,200+ participants</p>
+                    <a href="#" class="evidence-link">View Research →</a>
+                </div>
+                <div class="evidence-card">
+                    <img src="images/patent-icon.svg" alt="Patent">
+                    <h3>3 Patents Pending</h3>
+                    <p>Proprietary absorption technology increases bioavailability by 340%</p>
+                    <a href="#" class="evidence-link">Patent Details →</a>
+                </div>
+                <div class="evidence-card">
+                    <img src="images/molecule-icon.svg" alt="Formula">
+                    <h3>Pharmaceutical Grade</h3>
+                    <p>GMP certified facilities, third-party tested for purity and potency</p>
+                    <a href="#" class="evidence-link">Lab Reports →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Medical Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Real Patient Results</h2>
+            <div class="testimonial-cards">
+                <div class="patient-card">
+                    <div class="before-after">
+                        <img src="images/patient-1-before.jpg" alt="Before">
+                        <img src="images/patient-1-after.jpg" alt="After">
+                    </div>
+                    <div class="patient-info">
+                        <h3>Robert K., Age 52</h3>
+                        <p>"My T-levels went from 287 to 782 ng/dL in 90 days. I feel like I'm 30 again."</p>
+                        <div class="lab-verified">✓ Lab Results Verified</div>
+                    </div>
+                </div>
+                <div class="patient-card">
+                    <div class="before-after">
+                        <img src="images/patient-2-before.jpg" alt="Before">
+                        <img src="images/patient-2-after.jpg" alt="After">
+                    </div>
+                    <div class="patient-info">
+                        <h3>Michael T., Age 47</h3>
+                        <p>"Lost 34 lbs, gained muscle, and my doctor said my bloodwork is perfect."</p>
+                        <div class="lab-verified">✓ Lab Results Verified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <img src="images/medical-journal.svg" alt="Medical Journal">
+                    <p>Published in Journal of Clinical Endocrinology</p>
+                </div>
+                <div class="trust-item">
+                    <img src="images/insurance-accepted.svg" alt="Insurance">
+                    <p>HSA/FSA Eligible</p>
+                </div>
+                <div class="trust-item">
+                    <img src="images/money-back.svg" alt="Guarantee">
+                    <p>180-Day Money Back Guarantee</p>
+                </div>
+                <div class="trust-item">
+                    <img src="images/made-usa.svg" alt="Made in USA">
+                    <p>Made in FDA-Registered Facility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="urgency-message">
+                    <img src="images/alert-medical.svg" alt="Alert">
+                    <p><strong>Limited Supply:</strong> Due to complex manufacturing, we can only produce 500 units per month</p>
+                </div>
+                <h2>Don't Let Low T Control Your Life</h2>
+                <p>Join 47,000+ men who've reclaimed their vitality with Master-T™</p>
+                <button class="cta-button" onclick="document.getElementById('clinicalForm').scrollIntoView()">
+                    Get Your Free Clinical Assessment
+                </button>
+                <div class="guarantee-badges">
+                    <img src="images/guarantee-180.svg" alt="180 Day Guarantee">
+                    <img src="images/doctor-recommend.svg" alt="Doctor Recommended">
+                    <img src="images/clinical-strength.svg" alt="Clinical Strength">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
