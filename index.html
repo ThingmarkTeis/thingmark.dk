@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThingMark — Performance Programs</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #fafafa; }
+
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+        }
+        .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.8; max-width: 500px; }
+
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-4px); }
+
+        .card-header {
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+        .card-header h2 { font-size: 1.5rem; }
+
+        .card-body {
+            padding: 1.5rem 2rem 2rem;
+            text-align: center;
+        }
+        .card-body p { margin-bottom: 1.5rem; color: #555; line-height: 1.5; }
+        .card-body .price { font-size: 2rem; font-weight: 800; color: #1a1a2e; margin-bottom: 1rem; }
+
+        .card-btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .c1 .card-header { background: linear-gradient(135deg, #0f0c29, #302b63); }
+        .c1 .card-btn { background: #e94560; }
+
+        .c2 .card-header { background: linear-gradient(135deg, #0a2239, #1d8348); }
+        .c2 .card-btn { background: #1d8348; }
+
+        .c3 .card-header { background: linear-gradient(135deg, #1a0000, #8b0000); }
+        .c3 .card-btn { background: #c0392b; }
+
+        .c4 .card-header { background: linear-gradient(135deg, #0a1628, #2471a3); }
+        .c4 .card-btn { background: #2e86c1; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>ThingMark</h1>
+        <p>Performance programs built for men who refuse to settle.</p>
+    </section>
+
+    <section class="programs">
+        <div class="card c1">
+            <div class="card-header"><h2>The Executive Edge</h2></div>
+            <div class="card-body">
+                <p>Premium coaching for high-performing professionals optimizing energy, focus, and physical performance.</p>
+                <div class="price">$497</div>
+                <a href="/executive-edge/" class="card-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card c2">
+            <div class="card-header"><h2>The 90-Day Recharge</h2></div>
+            <div class="card-body">
+                <p>A complete 90-day health transformation with progressive coaching and structured accountability.</p>
+                <div class="price">$297</div>
+                <a href="/90-day/" class="card-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card c3">
+            <div class="card-header"><h2>Master T</h2></div>
+            <div class="card-body">
+                <p>Evidence-based testosterone optimization through training, nutrition, and lifestyle protocols.</p>
+                <div class="price">$397</div>
+                <a href="/master-t/" class="card-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="card c4">
+            <div class="card-header"><h2>The Reboot</h2></div>
+            <div class="card-body">
+                <p>A beginner-friendly health reset. Simple steps, real guidance, lasting results.</p>
+                <div class="price">$197</div>
+                <a href="/reboot/" class="card-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
